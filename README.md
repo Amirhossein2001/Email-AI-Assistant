@@ -23,8 +23,7 @@ n8n – Workflow automation engine
 LLM (Ollama / OpenAI compatible) – Text generation and understanding
 SMTP / Email Service – Email delivery
 Webhooks – Trigger-based input handling
-📸 Workflow
-
+emai-workflow.png
 ⚙️ How it works
 A request is sent to the n8n webhook
 The workflow extracts email details
