@@ -1,54 +1,51 @@
-Email Automation Agent (n8n + LLM)
+Email Automation Agent built with n8n + LLM
 
-This project is an email automation system built using n8n and integrated with LLM-based intelligence.
-It allows users to trigger email actions through simple instructions and can be extended into a fully autonomous AI email assistant.
+📌 Overview
+
+This project is an automated email system built using n8n and integrated with LLM-based intelligence.
+
+It allows users to trigger email actions using simple inputs and can be extended into a fully autonomous AI email assistant.
 
 🚀 What it does
-Receives structured instructions (recipient, subject, message)
-Processes input through an automated workflow
+Receives structured email instructions (recipient, subject, message)
+Processes data through an automated n8n workflow
 Sends emails automatically via SMTP / email provider
-Uses LLM to enhance or generate email content (optional)
-Fully workflow-based (no traditional backend required)
-🧠 Key Idea
+Optionally uses an LLM to generate or improve email content
+Fully workflow-based system (no traditional backend required)
+🧠 Core Idea
 
-Instead of manually writing and sending emails, the system automates the whole process:
+Instead of manually writing and sending emails, the system automates the entire process:
 
 User Input → n8n Workflow → (Optional LLM Processing) → Email Sent
 
 🛠️ Tech Stack
 n8n – Workflow automation engine
-LLM (Ollama / OpenAI compatible) – Text understanding and generation
+LLM (Ollama / OpenAI compatible) – Text generation and understanding
 SMTP / Email Service – Email delivery
 Webhooks – Trigger-based input handling
 📸 Workflow
 
-Overview:
-
-Webhook receives input
-Data is processed in n8n
-LLM optionally generates/improves content
-Email is sent via SMTP
 ⚙️ How it works
-A request is sent to the n8n webhook (email details)
-Workflow parses the input
-(Optional) LLM generates or improves email content
-Final email is sent to the recipient
+A request is sent to the n8n webhook
+The workflow extracts email details
+(Optional) LLM generates or improves the email content
+The final email is sent automatically to the recipient
 📌 Status
 
 This project is currently running locally and was built for learning and demonstration purposes.
 It works in a development environment and can be deployed if needed.
 
 🚀 Future Improvements
-Incoming email processing (Inbox automation)
-AI-generated replies based on received emails
+Incoming email (Inbox) processing
+AI-generated automatic replies
 Full AI Email Assistant (send + read + respond)
 Multi-provider email support
-Better context handling with LLM memory
+Improved context handling with LLM memory
 🎯 Goal
 
 This project demonstrates practical experience in:
 
-Backend-style workflow automation
+Workflow automation using n8n
 AI integration in real-world systems
-n8n-based architecture design
-Building automation tools using LLMs
+Designing automation pipelines
+Using LLMs for practical productivity tools
