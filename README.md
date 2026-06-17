@@ -1,1 +1,66 @@
-# Email-AI-Assistant Email Automation Agent (n8n + LLM) This project is an email automation system built using n8n and integrated with LLM-based intelligence. It allows users to trigger email actions through simple instructions and can be extended into a fully autonomous AI email assistant. 🚀 What it does Receives structured instructions (recipient, subject, message) Processes input through an automated workflow Sends emails automatically via SMTP/email provider Supports integration with an LLM to enhance or generate email content Fully workflow-based (no traditional backend required) 🧠 Key Idea Instead of manually writing and sending emails, the system automates the entire process: User Input → n8n Workflow → (Optional LLM Processing) → Email Sent 🛠️ Tech Stack n8n – Workflow automation engine LLM (Ollama / OpenAI compatible) – Text understanding and generation SMTP / Email Service – Email delivery Webhooks – Trigger-based input handling email-workflow.png Workflow overview Node structure (Webhook → LLM → Email) Execution example ⚙️ How it works A request is sent to the n8n webhook (e.g., email details) The workflow parses the input (Optional) LLM generates or improves email content Email is sent automatically to the recipient 📌 Status This project is currently running locally and was built for demonstration and learning purposes. It is fully functional in a development environment and can be deployed if needed. 🚀 Future Improvements Incoming email processing (Inbox automation) AI-generated replies based on email content Full AI Email Assistant (send + read + respond) Integration with multiple email providers Improved context handling with LLM memory 🎯 Goal The goal of this project is to demonstrate practical experience in: Backend-style workflow automation AI integration with real-world tasks n8n-based system design Building automation tools using LLMs
+# 📧 Email AI Assistant
+
+An AI-powered email automation workflow that allows users to send emails using natural language instructions.
+
+The user simply tells the AI who they want to email and what they want to say, and the system generates and sends the email automatically through an integrated workflow.
+
+## 🚀 Features
+
+- 🤖 AI-driven email generation from natural language prompts
+- 📩 Automatic email sending through Gmail integration
+- 🔄 Workflow-based architecture for easy customization
+- 🧠 Built with an AI Agent and memory support
+- 🛠️ Easily extensible for future capabilities
+
+## 🔮 Planned Features
+
+This project is designed to evolve with additional capabilities, including:
+
+- Receiving incoming emails
+- Automatic AI-generated replies
+- Context-aware conversations
+- Multi-step email workflows
+- Support for multiple email providers
+- Conversation history and memory improvements
+
+## 🏗️ Workflow Overview
+
+The current workflow processes user requests as follows:
+
+1. User sends a chat message.
+2. The AI Agent interprets the request.
+3. A conditional check validates the action.
+4. JavaScript logic prepares the email.
+5. The email is sent automatically via Gmail.
+
+## 📸 Workflow Screenshot
+
+![Email Workflow](email-workflow.png)
+
+## 🛠️ Tech Stack
+
+- AI Agent
+- Ollama Chat Model
+- JavaScript
+- Gmail Integration
+- Workflow Automation
+- Simple Memory
+
+## 💡 Example
+
+**User Prompt:**
+
+> Send an email to John and tell him that our meeting has been moved to tomorrow at 10 AM.
+
+**AI Action:**
+
+- Generates a properly formatted email.
+- Sends it to the specified recipient through Gmail.
+
+## 📌 Future Vision
+
+The long-term goal of **Email AI Assistant** is to become an intelligent email agent capable of handling complete email communication autonomously, including understanding context, receiving messages, and responding on behalf of the user when appropriate.
+
+---
+
+Feel free to contribute or extend the workflow with new automation features.
